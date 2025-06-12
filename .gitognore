@@ -1,0 +1,12 @@
+# IDE
+.idea/
+
+# Environnement virtuel
+venv/
+
+# DevContainer (optionnel)
+.devcontainer/
+
+
+*.csv
+test_db.py
