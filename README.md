@@ -51,7 +51,7 @@ streamlit run app.py
 ````
 
 ## Structure du projet
-
+```
 DataSkillsGym/
 ├── data/                     # Base de données DuckDB
 ├── modules/                  # Modules des exercices
@@ -63,6 +63,8 @@ DataSkillsGym/
 ├── create_data.py            # Script d'initialisation
 ├── README.md                 # Ce fichier
 └── requirements.txt          # Dépendances
+```
+
 
 ## 📚 Exercices disponibles
 
