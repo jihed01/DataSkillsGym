@@ -19,8 +19,8 @@ def initialize_database():
     # # Catégorie AGGREGATIONS
     # _create_aggregation_tables(con)
     #
-    # # Catégorie WINDOW FUNCTIONS
-    # _create_window_function_tables(con)
+    # Catégorie WINDOW FUNCTIONS
+    _create_window_function_tables(con)
 
     con.close()
 
@@ -124,13 +124,29 @@ def _create_join_tables(con):
 #     # [...] Même structure pour les autres exercices
 #
 #
-# def _create_window_function_tables(con):
-#     """Crée les tables pour les exercices WINDOW FUNCTIONS"""
-#     # Exo 1
-#     con.execute("CREATE TABLE IF NOT EXISTS window_funcs.exo1_data AS SELECT * FROM [...]")
-#
-#     # Exo 2 à 5
-#     # [...] Même structure pour les autres exercices
+def _create_window_function_tables(con):
+    """Crée les tables pour les exercices WINDOW FUNCTIONS"""
+    # Exo 1 : La clause OVER
+    # Define the furniture data
+    furniture_data = [
+        ("Chairs", "Chair 1", 5.2),
+        ("Chairs", "Chair 2", 4.5),
+        ("Chairs", "Chair 3", 6.8),
+        ("Sofas", "Sofa 1", 25.5),
+        ("Sofas", "Sofa 2", 20.3),
+        ("Sofas", "Sofa 3", 30.0),
+        ("Tables", "Table 1", 15.0),
+        ("Tables", "Table 2", 12.5),
+        ("Tables", "Table 3", 18.2),
+    ]
+
+    # Create a pandas DataFrame from the predefined data
+    furniture = pd.DataFrame(furniture_data, columns=["category", "item", "weight"])
+
+    con.execute("CREATE TABLE IF NOT EXISTS window_funcs.exo1_data AS SELECT * FROM furniture")
+
+    # Exo 2 à 5
+    # [...] Même structure pour les autres exercices
 
 
 if __name__ == "__main__":
