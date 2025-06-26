@@ -10,3 +10,8 @@ venv/
 
 *.csv
 test_db.py
+
+# Fichiers de base de données
+*.duckdb
+*.db
+Data/
