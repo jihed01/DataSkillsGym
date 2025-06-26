@@ -1,4 +1,7 @@
 # Data Skills Gym 🏋️‍♂️
+[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dataskillsgym.streamlit.app/)
+![GitHub last commit](https://img.shields.io/github/last-commit/jihed01/DataSkillsGym)
+![GitHub repo size](https://img.shields.io/github/repo-size/jihed01/DataSkillsGym)  
 
 Application interactive pour maîtriser les concepts SQL avancés à travers des exercices pratiques.
 
@@ -9,6 +12,15 @@ Application interactive pour maîtriser les concepts SQL avancés à travers des
 - ✅ **Validation en temps réel** des requêtes SQL
 - 🐍 **Versions SQL et Pandas** pour chaque exercice
 - 📊 **Visualisation interactive** des résultats
+
+## Technologies utilisées
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=Streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/DuckDB-FFF000?logo=duckdb&logoColor=black" alt="DuckDB">
+  <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas">
+</p>
 
 ## Comment l'utiliser
 
